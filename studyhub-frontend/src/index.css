@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    background-color: theme('colors.background');
+    font-family: 'Inter', sans-serif;
+    color: theme('colors.dark');
+}
+
+@layer utilities {
+    .elevated-card {
+        box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+        background-color: white;
+        border-radius: 0.5rem;
+    }
+    .smooth-transition {
+        transition: all 0.2s ease;
+    }
+}
